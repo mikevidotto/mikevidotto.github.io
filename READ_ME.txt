@@ -1,3 +1,4 @@
-right click "index.html" and open with Google Chrome
+//scottyroo the scotty that doo
 
-scottyroo the scotty that doo
+
+a simple typing test web application using Javascript
