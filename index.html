@@ -1,9 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type_</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!--Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
 <body>
-<h1>LAB 1</h1>
-<p>Michael Vidotto</p>
-<p>040943913</p>
-<p>Computer Engineering Technologies - Computing Science</p>
+
+        <div class="header">
+            <div id="options">
+                <div id="empty-options"></div>
+                <div id="time-options">
+                    <button id="fifteen" class="button">15</button>
+                    <button id="thirty" class="button">30</button>
+                    <button id="sixty" class="button">60</button>
+                </div>
+            </div>
+            <div class="timer-wpm-container">
+                <div class="wpm-container">
+                    <div id="wpm-label">words</div>
+                    <div id='wpm'>0</div>
+                </div>
+    
+                <div class="timer-container">
+                    <div id='timer-label'>sec</div>
+                    <div id='timer'>60</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid">
+
+            <div class="content">
+                <div id="post-game-screen">
+                    <div id='display-wpm'></div>
+                    <div id='display-raw-characters'></div>
+                    <div id='display-characters'></div>
+                </div>
+                <div id="input-box">
+                    <input type="text" id='input' oninput="typing()">
+                </div>
+                <div id="words"></div>
+                <div id="space-alert">spacebar</div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <h6>Michael Vidotto</h6>
+            <h6>mikevidotto@live.com</h6>
+            <div id='debug'></div>
+        </footer>
+
+    <script src="type.js"></script>
+    
 </body>
 </html>
