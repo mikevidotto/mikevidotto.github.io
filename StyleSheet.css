@@ -207,6 +207,23 @@ div {
     /* border: 1px solid red; */
 }
 
+#words-placeholder {
+    position: absolute;
+    top: 500px;
+    text-align: center;
+    text-anchor: start;
+    padding: 25px 50px 25px 25px;
+    width: 50%;
+    font-size: 30px;
+    /* background: -webkit-linear-gradient(#111111, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    height: 250px;
+    visibility: hidden;
+    /* border: 1px solid red; */
+}
+
 #space-alert {
     position: relative;
     top: -120px;

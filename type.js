@@ -125,6 +125,10 @@ function setTime() {
       document.getElementById("display-raw-characters").innerHTML = "# of keys: " + tempString; 
       tempString = corCharacters.toString().fontcolor('orange');
       document.getElementById('display-characters').innerHTML = "# of correct keys: " + tempString;
+
+      document.getElementById('words').style.visibility = "hidden";
+      document.getElementById('words-placeholder').style.visibility = "visible";
+      document.getElementById('words-placeholder').innerHTML = "Hit 'Tab' to play again";
       checkTimer = false;
     }
 
@@ -370,6 +374,8 @@ var inputBox = document.getElementById('input-box');
               //quit or new game
               if (event.key == "Tab") {
                 //check for enter or some shit and then run the function
+                document.getElementById('words-placeholder').style.visibility = "hidden";
+                document.getElementById('words').style.visibility = "visible";
                 document.getElementById('debug').innerHTML = " starting new game";
                 start();
               }
